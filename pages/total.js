@@ -38,7 +38,7 @@ export default function Total() {
 
             <div className="mt-5">
                 <input type="submit" value="Confirmar Pedido"
-                    className={`${comprobarPedido() ? "bg-indigo-100" : "bg-indigo-600 hover:bg-indigo-800"} w-full lg:w-auto px-5 py-2 rounded uppercase font-bold text-white text-center`} 
+                    className={`${comprobarPedido() ? "bg-indigo-100 hidden" : "bg-indigo-600 hover:bg-indigo-800"} w-full lg:w-auto px-5 py-2 rounded uppercase font-bold text-white text-center`} 
                 />
             </div>
 

@@ -7,7 +7,7 @@ const ResumenProducto = ({producto}) => {
     const {handleChangeCantidades, handleChangeEliminarProducto} = useQuiosco();
   return (
     <div className="shadow p-5 mb-3 flex gap-10 items-center">
-        <div className="md:w-1/6">
+        <div className="sm:w-1/6">
             <Image
                 width={300}
                 height={400}
@@ -15,10 +15,10 @@ const ResumenProducto = ({producto}) => {
                 src={`/assets/img/${producto.imagen}.jpg`}
             />
         </div>
-        <div className="md:w-4/6">
-            <p className="text-3xl font-bold">{producto.nombre}</p>
-            <p className="text-3xl font-bold mt-2">Cantidad: {producto.cantidad}</p>
-            <p className="text-2xl font-bold mt-2">Precio: {formatearDinero(producto.precio)}</p>
+        <div className="sm:w-4/6">
+            <p className="text-2xl sm:text-3xl font-bold">{producto.nombre}</p>
+            <p className="text-2xl sm:text-3xl font-bold mt-2">Cantidad: {producto.cantidad}</p>
+            <p className="text-xl sm:text-2xl font-bold mt-2">Precio: {formatearDinero(producto.precio)}</p>
 
             <p className="text-3xl font-bold text-amber-500 mt-2">Subtotal: {formatearDinero(producto.precio * producto.cantidad)}</p>
 

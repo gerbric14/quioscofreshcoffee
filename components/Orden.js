@@ -47,11 +47,11 @@ export default function Orden({orden}) {
                 ))}
 
             </div>
-            <div className="md: flex md:items-center md:justify-between my-10">
+            <div className="sm:flex sm:items-center sm:justify-between my-10">
                 <p className="mt-5 font-black text-4xl text-amber-500">Total a pagar: {formatearDinero(total)}</p>
                 <button 
                     type="button"
-                    className="bg-indigo-600 hover:bg-indigo-800 mt-5 md:mt-0 py-3 px-10 uppercase font-bold text-white rounded-lg"
+                    className="bg-indigo-600 hover:bg-indigo-800 mt-5 sm:mt-0 py-3 px-10 uppercase font-bold text-white rounded-lg"
                     onClick={completarOrden}
                 >
                     Completar Orden

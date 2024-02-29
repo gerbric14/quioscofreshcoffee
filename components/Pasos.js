@@ -29,7 +29,7 @@ const Pasos = () => {
                     onClick={() => {
                         router.push(paso.url)
                     }}
-                    className="text-2xl font-bold"
+                    className="text-2xl font-bold mr-5"
                 >{paso.nombre}</button>
             ))}
  

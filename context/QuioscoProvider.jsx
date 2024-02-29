@@ -56,7 +56,7 @@ const QuioscoProvider = ({children}) => {
             //ACTUALIZAR CANTIDAD
             const pedidoActualizado = pedido.map(productoState => productoState.id === producto.id ? producto : productoState)
             setPedido(pedidoActualizado);
-            toast.success('Guardado Correctamente', {
+            toast.success('Modificado correctamente', {
                 autoClose: 3000,
             });
         }else{
@@ -80,7 +80,7 @@ const QuioscoProvider = ({children}) => {
     const handleChangeEliminarProducto = id => {
         const pedidoActualizado = pedido.filter(producto => producto.id !== id)
         setPedido(pedidoActualizado);
-        toast.error('Pedido Eliminado', {
+        toast.error('Producto eliminado del pedido', {
             autoClose: 3000,
         });
     }
@@ -97,7 +97,7 @@ const QuioscoProvider = ({children}) => {
             setNombre('');
             setTotal(0);
 
-            toast.success('Pedido Realizado Correctamente!')
+            toast.success('Pedido realizado correctamente!')
 
             setTimeout(() => {
                 router.push('/')

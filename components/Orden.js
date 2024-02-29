@@ -36,10 +36,10 @@ export default function Orden({orden}) {
                             />
                         </div>
                         <div className="p-5 space-y-2">
-                            <h4 className="text-xl font-bold text-amber-500">
+                            <h4 className="text-xl sm:text-2xl md:text-3xl font-bold text-amber-500">
                                 {plato.nombre}
                             </h4>
-                            <p className="text-lg font-bold">Cantidad: {plato.cantidad}</p>
+                            <p className="text-lg sm:text-xl md:text-2xl font-bold">Cantidad: {plato.cantidad}</p>
                         </div>
                     </div>
                     
@@ -48,7 +48,7 @@ export default function Orden({orden}) {
 
             </div>
             <div className="sm:flex sm:items-center sm:justify-between my-10">
-                <p className="mt-5 font-black text-4xl text-amber-500">Total a pagar: {formatearDinero(total)}</p>
+                <p className="mt-5 font-black text-2xl sm:text-4xl text-amber-500">Total a pagar: {formatearDinero(total)}</p>
                 <button 
                     type="button"
                     className="bg-indigo-600 hover:bg-indigo-800 mt-5 sm:mt-0 py-3 px-10 uppercase font-bold text-white rounded-lg"
